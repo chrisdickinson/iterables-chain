@@ -1,0 +1,17 @@
+{
+  "name": "@iterables/iterable-chain",
+  "version": "1.0.0",
+  "description": "Chain multiple iterators together.",
+  "main": "iterables-chain.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Chris Dickinson <chris@neversaw.us> (http://neversaw.us/)",
+  "license": "MIT",
+  "devDependencies": {
+    "@iterables/count": "^1.0.2",
+    "@iterables/take": "^1.0.1",
+    "tap": "^10.3.2"
+  }
+}
