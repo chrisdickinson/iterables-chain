@@ -1,6 +1,6 @@
 {
   "name": "@iterables/chain",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Chain multiple iterators together.",
   "main": "iterables-chain.js",
   "scripts": {
