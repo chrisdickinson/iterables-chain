@@ -1,10 +1,19 @@
 {
-  "name": "@iterables/iterable-chain",
+  "name": "@iterables/chain",
   "version": "1.0.0",
   "description": "Chain multiple iterators together.",
   "main": "iterables-chain.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "update-contrib": "weallcontribute -o . && git add CONTRIBUTING.md && git commit -m 'docs(contributing): updated CONTRIBUTING.md'",
+    "update-coc": "weallbehave -o . && git add CODE_OF_CONDUCT.md && git commit -m 'docs(coc): updated CODE_OF_CONDUCT.md'",
+    "prerelease": "npm run update-contrib && npm run update-coc",
+    "release": "standard-version",
+    "test": "tap test.js",
+    "posttest": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisdickinson/iterables-chain.git"
   },
   "keywords": [],
   "author": "Chris Dickinson <chris@neversaw.us> (http://neversaw.us/)",
@@ -12,6 +21,10 @@
   "devDependencies": {
     "@iterables/count": "^1.0.2",
     "@iterables/take": "^1.0.1",
-    "tap": "^10.3.2"
+    "standard": "^10.0.1",
+    "standard-version": "^4.0.0",
+    "tap": "^10.3.2",
+    "weallbehave": "^1.0.3",
+    "weallcontribute": "^1.0.8"
   }
 }
